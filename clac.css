@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #606394;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur de la calculatrice */
+.calculator {
+    background-color: #3b3f5a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+/* Écran de la calculatrice */
+.screen {
+    background-color: #1e2134;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: right;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons de la calculatrice */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #5d648b;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+.btn DEL {
+    background-color: #101011;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #6b70a1;
+}
+
+.equal {
+    grid-column: span 2; 
+    background-color: #d45151;
+    color: #fff;
+}
+
+.equal:hover {
+    background-color: #b44444;
+}
+.reset {
+    grid-column: span 2; 
+    background-color: #d45151;
+    color: #fff;
+}
